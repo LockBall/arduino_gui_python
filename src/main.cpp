@@ -8,6 +8,8 @@ int incomingByte = 0;
 
 void setup() {  // the setup function runs once when you press reset or power the board
     pinMode(LED_BUILTIN, OUTPUT) ;
+    digitalWrite(LED_BUILTIN, state_13);
+
     Serial.begin(baud) ;
     Serial.setTimeout(100) ; // msec
 }

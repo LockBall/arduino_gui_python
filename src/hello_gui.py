@@ -30,12 +30,16 @@ def switch_event():
 
 
 switch_1 = ctk.CTkSwitch(master=root, text="DIO_13\nLED_builtin", command=switch_event,
-                        variable=switch_var, onvalue="13", offvalue="13")
+                         variable=switch_var, onvalue="13", offvalue="13",
+                         fg_color="red", progress_color="green"
+                        )
 switch_1.pack(padx=20, pady=10)
 
 
-switch_2 = ctk.CTkSwitch(master=root, text="DIO_14\nLED_builtin", command=switch_event,
-                        variable=switch_var, onvalue="14", offvalue="14")
+switch_2 = ctk.CTkSwitch(master=root, text="DIO_14\n??", command=switch_event,
+                         variable=switch_var, onvalue="14", offvalue="14",
+                         fg_color="red", progress_color="green"
+                        )
 switch_2.pack(padx=20, pady=10)
 
 
