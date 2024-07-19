@@ -15,7 +15,7 @@ except Exception as exc:
 
 root = ctk.CTk()  # create CTk window
 root.geometry("300x150")
-root.title(device)
+root.title(device_name)
 ctk.set_appearance_mode("System")  # Modes: system (default), light, dark
 ctk.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
 switch_var = ctk.StringVar(value="0")
