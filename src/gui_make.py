@@ -27,14 +27,13 @@ destination_file = "gui_use.py"
 with open(source_file, "rb") as src, open(destination_file, "wb") as dst:
     shutil.copyfileobj(src, dst)
 
-print("File copied successfully!")
+print("File copied successfully, gui_use.py now exists!")
 # ********
 
-
 # Open the file in append mode ('a') and use print with the file object
-with open(destination_file, "a") as f:
+with open(destination_file, "a") as gui_use:
   
-    print('\n# What follows was appended to base file on: ' + str(my_now) + '\n', file=f)
+    print('\n# What follows was appended to gui_base file on: ' + str(my_now) + '\n', file=f)
 
        
     for key in pin_out_dict :
@@ -43,10 +42,8 @@ with open(destination_file, "a") as f:
             + '\n    fg_color="red", ' + 'progress_color="green"' \
             + '\n)'
         
-        print(str(switch_block), file=f)
-        print('switch_' + key +'.pack(padx=20, pady=10)\n\n', file=f)
+        print(str(switch_block), file=gui_use)
+        print('switch_' + key +'.pack(padx=20, pady=10)\n\n', file=gui_use)
 
     
-    print("root.mainloop()", file=f)
-
-
+    print("root.mainloop()", file=gui_use)
