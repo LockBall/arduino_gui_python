@@ -3,6 +3,5 @@ platformIO
 powershell  
 python  
 customtkinter  
-pyserial  
-git  
+pyserial    
 arduino nano new bootloader and it's COM port  
