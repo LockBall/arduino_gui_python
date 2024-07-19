@@ -1,8 +1,8 @@
+Required Software  
 microsoft vs code  
 platformIO  
 powershell  
-python  
+python 3.12  
 customtkinter  
-pyserial  
-git  
-arduino nano new bootloader and it's COM port  
+pyserial    
+arduino nano new bootloader and it's COM port
