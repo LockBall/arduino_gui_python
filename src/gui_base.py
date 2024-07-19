@@ -7,7 +7,11 @@ import customtkinter as ctk
 import serial
 from config import *
 
-arduino = serial.Serial(com_port, baud)
+try:
+    arduino = serial.Serial(com_port, baud)
+except Exception as exc:
+    message = "Error creating arduino serial connection object."
+    print(message)
 
 root = ctk.CTk()  # create CTk window
 root.geometry("300x150")
