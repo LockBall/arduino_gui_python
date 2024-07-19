@@ -14,11 +14,11 @@ my_now = datetime.datetime.now().strftime("%d-%b-%Y_%H:%M:%S")
 if os.path.exists(file_path):
   try:
     os.remove(file_path)  # Attempt to delete the file
-    print("File deleted successfully!")
+    print("gui_use.py File deleted successfully!")
   except OSError as error:
-    print("Error deleting file:", error)
+    print("Error deleting file gui_use.py:", error)
 else:
-  print("File not found.")
+  print("gui_use.py File not found.")
 # ********
   
 # Use shutil.copyfileobj to efficiently copy the file contents
